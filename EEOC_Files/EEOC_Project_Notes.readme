@@ -1,0 +1,17 @@
+For my Code:Louisville Capstone Project, I wanted to anayle Government EEO Data. 
+
+However, to my surprise, I leanred that the EEO Data used on the Government Census Website is actually 
+data taken from the American Community Survey administered by the Census Bureau. 
+
+The Data I wanted, is the EEO data Private Employers are required to submit to the Federal Government. 
+
+That Data is called EEOC Data. It can only be accessed through the EEOC Website: https://www.eeoc.gov/data/employment-statistics
+
+That Data is divided into EEOC 1, 3,4,5
+    EEOC1 Data: Private Employers
+    EEOC3 Data: Referral Unions
+    EEOC4 Data: State and Local Government
+    EEOC5 Data: Elementary and Secondary Schools
+
+EEOC1 Data was all saved as Excel files. I created a script to standardize the names of all 10 files and then convert them into CSV file to work better in Pandas
+
