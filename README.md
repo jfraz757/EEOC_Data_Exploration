@@ -20,4 +20,3 @@ I also dropped most of the aggregated columns, reducing the columns from 275 to 
 The idea was that I could use those 22 columns to make my own aggregations of any of the other 253 if i wanted to later on.
 4/26/26 I discovered I was wrong. By removing those aggregated columns I screwed myself. 
 This EEOC data is not microdata, it contains embeded sub-totals at multiple levels. I will need to start back from scratch.
-
