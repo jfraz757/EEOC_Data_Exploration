@@ -1,22 +1,42 @@
-For my Code:Louisville Capstone Project, I wanted to anayle Government EEO Data. 
 
-However, to my surprise, I leanred that the EEO Data used on the Government Census Website is actually 
-data taken from the American Community Survey administered by the Census Bureau. 
+# EEOC Data Exploration
 
-The Data I wanted, is the EEO data Private Employers are required to submit to the Federal Government. 
+This repo contains all of the files, datasets, and scripts for my Exploratory Data Analysis of 2014-2023 EEOC1 Reported Data. 
 
-That Data is called EEOC Data. It can only be accessed through the EEOC Website: https://www.eeoc.gov/data/employment-statistics
 
-That Data is divided into EEOC 1, 3,4,5
-    EEOC1 Data: Private Employers
-    EEOC3 Data: Referral Unions
-    EEOC4 Data: State and Local Government
-    EEOC5 Data: Elementary and Secondary Schools
+## Installation and Setup
 
-EEOC1 Data was all saved as Excel files. I created a script to standardize the names of all 10 files and then convert them into CSV file to work better in Pandas
+To run this project locally, you will need Python installed. 
 
-I made some scripts to clean the data sets, add a year column to each Dataset and stack them into one DataSet. 
-I also dropped most of the aggregated columns, reducing the columns from 275 to 22.
-The idea was that I could use those 22 columns to make my own aggregations of any of the other 253 if i wanted to later on.
-4/26/26 I discovered I was wrong. By removing those aggregated columns I screwed myself. 
-This EEOC data is not microdata, it contains embeded sub-totals at multiple levels. I will need to start back from scratch.
+    1. Clone this repository to your local machine.
+    2. Create and activate a virtual environment.
+    3. Install the required dependencies by running the following command in your terminal:
+    
+```bash
+pip install -r requirements.txt
+```
+## Data Sources
+
+### Original Data Source:
+EEOC Website: https://www.eeoc.gov/data/employment-statistics
+
+### Data Sources Within the Repo:
+File Folders:
+- `EEOC_Data`: Contains the Datasets
+- `EEOC_Files`: Contains the Wrangling and Cleaning Scripts
+- `EEOC_User_Guides`: Contains EEOC Userguides for Variable Name Definitions
+## Authors
+
+- [@jfraz757](https://github.com/jfraz757)
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/jfraz757)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jfraz1/)
+
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
